@@ -1,48 +1,91 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asociación XYZ</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dulce Encanto - Manzanas Caramelizadas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-    <header>
-        <img src="logo.png" alt="Logo de la asociación" class="logo">
-        <h1>Asociación XYZ</h1>
-    </header>
-
-    <section class="info">
-        <h2>Misión</h2>
-        <p>
-            Nuestra misión es proporcionar soluciones innovadoras y sostenibles que mejoren la calidad de vida 
-            de las personas, promoviendo el desarrollo y la responsabilidad social.
-        </p>
-
-        <h2>Visión</h2>
-        <p>
-            Ser una organización líder en nuestro sector, reconocida por nuestra excelencia, compromiso y 
-            contribución al bienestar de la sociedad.
-        </p>
-    </section>
-
-    <section class="jerarquia">
-        <h2>Orden de Jerarquía</h2>
-        
-        <div class="diagrama">
-            <div class="box">Presidente</div>
-            <div class="line"></div>
-            <div class="sub-boxes">
-                <div class="box">Gerente</div>
-                <div class="box">Director</div>
-                <div class="box">Coordinador</div>
-            </div>
+<body class="bg-pink-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-red-500 text-white py-6 shadow-md">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl font-bold">Dulce Encanto</h1>
+      <p class="text-lg">Las mejores manzanas caramelizadas, directo del corazón</p>
+    </div>
+  </header>  <!-- Hero Section -->  <section class="bg-red-100 py-10">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">¡Prueba el sabor que enamora!</h2>
+      <p class="text-lg mb-6">Nuestras manzanas caramelizadas están hechas con ingredientes naturales y mucho amor. Perfectas para toda ocasión.</p>
+      <img src="https://images.unsplash.com/photo-1607623814075-3d7994e847b4" alt="Manzana caramelizada" class="mx-auto rounded-xl shadow-lg w-60">
+    </div>
+  </section>  <!-- Información nutricional -->  <section class="py-10 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Información Nutricional (por porción)</h2>
+      <ul class="list-disc pl-5 space-y-1 text-gray-700">
+        <li>Calorías: 220 kcal</li>
+        <li>Carbohidratos: 45 g</li>
+        <li>Azúcares: 36 g</li>
+        <li>Grasas: 2 g</li>
+        <li>Proteínas: 1 g</li>
+        <li>Fibra: 3 g</li>
+      </ul>
+    </div>
+  </section>  <!-- Proceso de preparación -->  <section class="py-10 bg-pink-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">¿Cómo las preparamos?</h2>
+      <ol class="list-decimal pl-5 space-y-2">
+        <li>Lavar y secar bien las manzanas.</li>
+        <li>Insertar palitos de madera en el centro.</li>
+        <li>Preparar el caramelo con azúcar, agua y una pizca de sal.</li>
+        <li>Sumergir cada manzana en el caramelo caliente.</li>
+        <li>Dejar enfriar sobre papel encerado.</li>
+        <li>¡Listo! A disfrutar.</li>
+      </ol>
+    </div>
+  </section>  <!-- Sección de marketing -->  <section class="py-10 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-6">¿Por qué elegir Dulce Encanto?</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-red-100 p-4 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Ingredientes Naturales</h3>
+          <p>Seleccionamos solo manzanas frescas y caramelos sin conservantes.</p>
         </div>
-
-        <h3>Organigrama</h3>
-        <img src="organigrama.png" alt="Organigrama de la asociación" class="organigrama">
-    </section>
-
+        <div class="bg-red-100 p-4 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Amor en Cada Bocado</h3>
+          <p>Hechas a mano con cuidado para que disfrutes una experiencia deliciosa.</p>
+        </div>
+        <div class="bg-red-100 p-4 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Perfectas para Eventos</h3>
+          <p>Ya sea una fiesta, feria o regalo, nuestras manzanas siempre encantan.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Pedidos -->  <section class="py-10 bg-red-100">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Haz tu Pedido</h2>
+      <p class="mb-4">¿Antojo de una manzana caramelizada? Realiza tu pedido fácil y rápido. Entregamos a domicilio en toda la ciudad.</p>
+      <form class="grid grid-cols-1 gap-4 max-w-md mx-auto">
+        <input type="text" placeholder="Nombre completo" class="p-2 rounded border border-gray-300">
+        <input type="email" placeholder="Correo electrónico" class="p-2 rounded border border-gray-300">
+        <input type="text" placeholder="Dirección de entrega" class="p-2 rounded border border-gray-300">
+        <textarea placeholder="Cantidad y detalles del pedido" class="p-2 rounded border border-gray-300"></textarea>
+        <button type="submit" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600">Enviar pedido</button>
+      </form>
+    </div>
+  </section>  <!-- Redes Sociales -->  <section class="py-10 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Síguenos en Redes Sociales</h2>
+      <p class="mb-6">Entérate de promociones, eventos y más. ¡Únete a nuestra comunidad!</p>
+      <div class="flex justify-center space-x-6">
+        <a href="#" class="text-red-500 hover:underline">Instagram: @dulceencanto</a>
+        <a href="#" class="text-red-500 hover:underline">Facebook: Dulce Encanto Oficial</a>
+        <a href="#" class="text-red-500 hover:underline">TikTok: @dulceencanto.mx</a>
+      </div>
+    </div>
+  </section>  <!-- Footer -->  <footer class="bg-red-500 text-white py-6 mt-10">
+    <div class="max-w-5xl mx-auto text-center">
+      <p>&copy; 2025 Dulce Encanto. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
